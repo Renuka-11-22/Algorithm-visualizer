@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Navbar controls (buttons + dropdowns) */
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between items */
+}
+
+/* Buttons and dropdowns */
+.btn, .dropdown {
+  padding: 8px 16px;
+  background-color: cornsilk;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover, .dropdown:hover {
+  background-color: lavenderblush;
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px; /* space below navbar */
+}
+
+.grid-row {
+  display: flex;
+}
+
+/* Node styles */
+.node {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: background-color 0.25s ease;
+}
+
+.node-start { background-color: green; }
+.node-end { background-color: red; }
+.node-wall { background-color: gray; }
+.node-visited { background-color: #a0e0ff; }
+.node-path { background-color: yellow; }

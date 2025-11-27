@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">Pathfinding Visualizer</div>
+
+    <div class="navbar-controls">
+      <a href="m1.html" class="btn">Home</a>
+
+      <!-- Algorithm selection -->
+      <select id="algorithmDropdown" class="dropdown">
+        <option value="dijkstra">Dijkstra</option>
+        <option value="weighted">Weighted Dijkstra</option>
+        <option value="astar">A*</option>
+        <option value="bfs">BFS</option>
+        <option value="dfs">DFS</option>
+        <option value="recursiveDFS">Recursive DFS</option>
+        <option value="greedy">Greedy BFS</option>
+        <option value="bidirectional">Bidirectional Search</option>
+        <option value="jump">Jump Point Search</option>
+      </select>
+
+      <!-- Speed selection -->
+      <select id="speedDropdown" class="dropdown">
+        <option value="fast">Fast</option>
+        <option value="medium" selected>Medium</option>
+        <option value="slow">Slow</option>
+      </select>
+
+      <!-- Buttons -->
+      <button class="btn" onclick="visualizeAlgorithm()">Run</button>
+      <button class="btn" onclick="clearGrid()">Clear Grid</button>
+    </div>
+  </nav>
+
+  <!-- Grid Container -->
+  <div id="grid" class="grid"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

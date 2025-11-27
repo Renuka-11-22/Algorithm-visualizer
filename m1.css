@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-size:50px;
+}
+.images{
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.t{
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+p{
+    margin-left: 50px;
+}

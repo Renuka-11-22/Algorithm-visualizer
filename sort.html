@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black min-h-screen flex flex-col items-center">
+
+  <!-- Navbar -->
+  <div class="flex items-center justify-center gap-4 p-4 bg-gray-800/90 shadow-lg w-full">
+    <a href="m1.html" 
+       class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow-md transition">
+      Home
+    </a>
+
+    <button onclick="init()" 
+            class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow-md transition">
+      Randomize
+    </button>
+
+    <select id="operation" 
+            class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow-md transition">
+      <option value="Algorithms">Algorithms</option>
+      <option value="Bubble Sorting">Bubble Sorting</option>
+      <option value="Selection Sorting">Selection Sorting</option>
+      <option value="Insertion Sorting">Insertion Sorting</option>
+      <option value="Quick Sorting">Quick Sorting</option>
+    </select>
+
+    <button type="button" onclick="play()" 
+            class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow-md transition">
+      Play
+    </button>
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-4xl font-extrabold text-white mt-6 mb-4">Sorting Visualizer</h1>
+
+  <!-- Canvas -->
+  <div class="p-6 bg-white shadow-xl rounded-xl">
+    <canvas id="myCanvas" width="600" height="400" class="border-4 border-gray-700 rounded-lg"></canvas>
+</div>
+
+
+  <!-- JS Files -->
+  <script src="math.js"></script>
+  <script src="column.js"></script>
+  <script src="sort.js"></script>
+</body>
+</html>
