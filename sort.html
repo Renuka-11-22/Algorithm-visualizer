@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="home nav">
+                <a href="m1.html">Home</a>
+            </div>
+            <div class="random nav">
+                <button onclick="init()">randomize</button>
+            </div>
+            <div class="selection nav">
+                <select id="operation" required>
+                    <option value="Algorithms">Algorithms</option>
+                    <option value="Bubble Sorting">Bubble Sorting</option>
+                    <option value="Selection Sorting">Selection Sorting</option>
+                    <option value="Insertion Sorting">Insertion Sorting</option>
+                    <option value="Quick Sorting">Quick Sorting</option>
+                </select>
+            </div>
+            <div class="start nav">
+                <button  type="button" onclick="play()">play</button>
+            </div>
+        </div>
+        <h1>Sorting Visualizer</h1>
+        <canvas id="myCanvas"  style="border: 2px solid black;"></canvas>
+        <script src="math.js"></script>
+        <script src="column.js"></script>
+        <script src="sort.js"></script>
+    </body>
+</html>
