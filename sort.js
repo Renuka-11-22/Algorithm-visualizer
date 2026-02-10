@@ -186,11 +186,7 @@ function animate(){
 
     requestAnimationFrame(animate);
 }
-  
-  
-  
-  
-  
+
   
   
   

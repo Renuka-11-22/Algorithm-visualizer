@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Binary Search with Graphical Representation</title>
+  <title>Binary Search</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      background-color: black;
       margin: 0;
       padding: 20px;
     }
@@ -15,20 +16,22 @@
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #f44336;
+      color: white;
     }
 
     .container {
-      max-width: 800px;
+      text-align: center;
+      max-width: 700px;
       margin: 0 auto;
-      background-color: #fff;
+      background-color: black;
       padding: 20px;
+      border: 2px solid white;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    input, button {
-      width: 100%;
+    input,
+    button {
+      width: 50%;
       padding: 10px;
       margin: 10px 0;
       font-size: 16px;
@@ -37,18 +40,18 @@
     }
 
     button {
-      background-color: #007bff;
-      color: white;
+      background-color: hsl(183, 94%, 49%);
+      color: black;
       cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
+      width: 53%;
     }
 
     #result {
-      margin-top: 20px;
+      margin: 20px auto;
+      /* THIS centers it */
       padding: 10px;
+      text-align: center;
+      width: 50%;
       background-color: #f8d7da;
       color: #721c24;
       border: 1px solid #f5c6cb;
@@ -58,18 +61,21 @@
 
     #graph {
       display: flex;
-      justify-content: center;  /* Align bars to the center */
+      justify-content: center;
+      /* Align bars to the center */
       margin-top: 10px;
     }
 
     .bar {
       width: 30px;
+      /* Fixed width for bars */
       background-color: yellow;
       text-align: center;
       color: white;
       border-radius: 10px;
       transition: height 0.3s ease;
       margin: 10px;
+      /* No margin between bars */
       height: 100px;
     }
 
@@ -85,23 +91,29 @@
       background-color: #d9edf7;
       color: #31708f;
     }
-    a{
-                color: white;
-                text-decoration: none;
-            }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    label {
+      color: white;
+    }
   </style>
 </head>
+
 <body>
+      <h1>Binary Search</h1>
   <div class="container">
-    <h1>Binary Search</h1>
 
-    <label for="array">Enter an array of numbers (comma separated):</label>
-    <input type="text" id="array" placeholder="e.g., 12, 45, 3, 7, 22">
+    <label for="array">Enter an array of numbers in sequencing order (comma separated):</label><br>
+    <input type="text" id="array" placeholder="e.g., 12, 45, 3, 7, 22"><br>
 
-    <label for="target">Enter target number:</label>
+    <label for="target">Enter target number:</label>1<br>
     <input type="number" id="target" placeholder="Target number to search for">
-    <button >
-        <a href="searching.html">Home</a>
+    <button>
+      <a href="searching.html">Home</a>
     </button>
     <button onclick="performBinarySearch()">Search</button>
     <div id="result"></div>
@@ -157,7 +169,7 @@
         if (currentArray[mid] === target) {
           setTimeout(() => {
             highlightElement(mid, true);
-            showResult('Target:'+target+' found at index' +mid, "success");
+            showResult('Target:' + target + ' found at index' + mid, "success");
           }, 500);
           return;
         }
@@ -171,7 +183,7 @@
 
         setTimeout(binarySearchStepByStep, 1000);
       } else {
-        showResult('Target: '+ target +' not found', "error");
+        showResult('Target: ' + target + ' not found', "error");
       }
     }
 
@@ -233,4 +245,5 @@
     }
   </script>
 </body>
+
 </html>

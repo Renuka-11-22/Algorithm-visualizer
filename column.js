@@ -32,7 +32,7 @@ class Column{
         const right=this.x+this.width/2;
 
         ctx.beginPath();
-        ctx.fillStyle="rgb(165,150,152)";
+        ctx.fillStyle="rgb(11, 229, 245)";
         ctx.moveTo(left,top);
         ctx.lineTo(left,this.y);
         ctx.ellipse(this.x,this.y,

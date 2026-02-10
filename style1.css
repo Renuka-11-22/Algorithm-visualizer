@@ -1,0 +1,51 @@
+body {
+ text-align:center;
+ font-family: Arial;
+ background:black;
+ color:white;
+}
+
+/* Heading */
+h2{
+ color:white;
+ margin-top:20px;
+}
+
+/* Buttons */
+.controls button {
+ padding:10px 15px;
+ margin:5px;
+ background:hsl(183, 94%, 49%);
+ color:black;
+ border:none;
+ border-radius:5px;
+ cursor:pointer;
+ font-size:14px;
+}
+
+.controls button:hover{
+ background:hsl(183, 94%, 49%);
+}
+
+/* Grid */
+#grid {
+ display:grid;
+ grid-template-columns:repeat(20,25px);
+ justify-content:center;
+ margin-top:20px;
+}
+
+/* Cells */
+.cell{
+ width:25px;
+ height:25px;
+ border:1px solid white;
+ background:#111;
+}
+
+/* Colors */
+.start{background:green;}
+.end{background:rgb(219, 8, 8);}
+.wall{background:pink;}
+.visited{background:#00ffff;}
+.path{background:yellow;}
