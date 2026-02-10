@@ -49,3 +49,8 @@ select{
     margin-top:20px;
     border:2px solid white;
 }
+
+a{
+    color:black;
+    text-decoration:none;
+}
